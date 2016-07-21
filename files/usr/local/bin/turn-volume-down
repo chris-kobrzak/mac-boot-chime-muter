@@ -1,0 +1,6 @@
+#!/usr/bin/env osascript -l JavaScript
+
+// See "/Library/Script Libraries/"
+systemVolume = Library('system-volume')
+
+systemVolume.turnDown()
