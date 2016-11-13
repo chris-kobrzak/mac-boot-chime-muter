@@ -40,6 +40,18 @@ normal computer use.
 To customise these values you would need to open the provided
 `system-volume.scpt` file in Script Editor, hack the values and save your edits.
 
+Troubleshooting
+---------------
+
+### Program no longer works after OS X upgrade
+
+Open Terminal and execute the following scripts:
+
+```bash
+defaults write com.apple.loginwindow LogoutHook /usr/local/bin/turn-volume-down
+defaults write com.apple.loginwindow LoginHook /usr/local/bin/turn-volume-up
+```
+
 Caveats
 -------
 
@@ -53,8 +65,8 @@ Notes for techies
 
 The simple scripts provided here have been written in JavaScript for Automation
 (JXA). Yes, the same effect could have been achieved with AppleScript in a more
-concise way but... JavaScript is awesome and it has been great fun to knock it
-all together using this language.
+concise way but... hey, JavaScript is awesome and it has been great fun to knock it
+all together using this language!
 
 Another alternative that can be found on-line is the firmware manipulation
 command line tool called `nvram`. I am yet to get it to work successfully so for
