@@ -1,5 +1,5 @@
-OS X boot chime muter
-=====================
+macOS/OS X boot chime muter
+===========================
 
 Prevent your Mac from making noise when it is being powered on.
 
@@ -29,11 +29,11 @@ If you wanted to uninstall the scripts, run similar commands but replace
 copied to `/Library/Script Libraries/`,
 - `turn-volume-down` and `turn-volume-up` executables are dropped under
 `/usr/local/bin/`,
-- the two executables are registered as OS X login and logout hooks.
+- the two executables are registered as login and logout hooks.
 
 The chime volume level is set to a very quiet 6% when the computer is being
 booted and once you have logged in - the level goes up to 31%. Why these
-particular values?  Well, by default OS X supports 16 intervals from mute to
+particular values?  Well, by default the OS supports 16 intervals from mute to
 maximum so 6% represents level 1 and 31 - level 5 that seems "just right" for
 normal computer use.
 
@@ -43,7 +43,7 @@ To customise these values you would need to open the provided
 Troubleshooting
 ---------------
 
-### Program no longer works after OS X upgrade
+### Program no longer works after macOS/OS X upgrade
 
 Open Terminal and execute the following scripts:
 
@@ -57,7 +57,7 @@ Caveats
 
 If you use keyboard shortcuts for immediately shutting down or restarting the
 computer (`Ctrl-Alt-Cmd-Eject/PowerOff` or `Ctrl-Cmd-Eject/PowerOff`,
-respectively), this tool is not going to work. This is because OS X seems to
+respectively), this tool is not going to work. This is because macOS/OS X seems to
 ignore login and logout hooks in such scenarios.
 
 Notes for techies
